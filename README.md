@@ -59,6 +59,7 @@ For a study on customer retention, churn rates (i.e. the proportion of customers
 
 Firstly, historical churn rates are analysed. The pie chart below depicts this.
 
+![](result_plots/2_customer_retention_piechart.png)
 
 
 ### 3. Which products contribute most to these customer retention and revenue figures? 
