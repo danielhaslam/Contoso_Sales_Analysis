@@ -43,13 +43,23 @@ The contribution of each segment to company revenue is visualised in the followi
 
 ![](result_plots/1_ltv_piechart.png)
 
-An analysis of net company revenue reveals that high spenders account for the majority of historical revenue—65.2% ($135.4M). While this aligns with expectations, a more surprising insight is that low spenders contribute just 2.1% ($4.34M). This suggests a significant underperformance in engaging lower-spending customers and may indicate an opportunity for more targeted marketing strategies aimed at this segment.
+An analysis of net company revenue reveals that high spenders account for the majority of historical revenue - 65.2% ($135.4M). While this aligns with expectations, a more surprising insight is that low spenders contribute just 2.1% ($4.34M). This suggests a significant underperformance in engaging lower-spending customers and may indicate an opportunity for more targeted marketing strategies aimed at this segment.
 
-Seeing as this dataset spans sales from three continents (North America, Australia and Europe), I delved into this tendency by continent. The following figure shows a breakdown of the above piechart figures, this time by each continent.
+Seeing as the company spans sales from three continents (North America, Australia and Europe), I delved into this tendency by continent. The following figure shows a breakdown of the above piechart figures, this time by each continent.
 
 ![](csv_data/continent_ltv_data.csv)
 
+Low-spending customers show consistently low engagement across all three continents, suggesting that this trend is not driven by location-specific factors. However, Europe performs marginally better in this segment, with 3.1% of sales attributed to low spenders, compared to just 1.7% in both Australia and North America. Notably, Europe also demonstrates stronger engagement among median spenders, who contribute over 40% of the region’s revenue—significantly higher than the under 30% seen in Australia and North America.
+
+Overall, it is recommendable to evaluate the fundamental business model, particularly in relation to customer segmentation and value proposition. Introducing tailored membership perks or loyalty incentives for low-spending customers could help improve retention and increase lifetime value within this underperforming segment. Pricing structures and marketing messaging may also be key features in this endeavour.
+
 ### 2. How does the company perform at customer retention rates?
+
+For a study on customer retention, churn rates (i.e. the proportion of customers which haven't made a purchase for an extended period of time) are calculated and analysed. Specifically, since Contoso is an e-commerce business, this period of time is set at 6 months for purposes of this study.
+
+Firstly, historical churn rates are analysed. The pie chart below depicts this.
+
+
 
 ### 3. Which products contribute most to these customer retention and revenue figures? 
 
