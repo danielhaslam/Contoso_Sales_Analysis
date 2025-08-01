@@ -3,20 +3,22 @@
 
 CREATE VIEW public.order_customer_data
 AS WITH customer_rev AS (
-         SELECT s.customerkey,
-            c.givenname,
-            c.surname,
-            c.age,
-            c.countryfull,
-            c.continent,
+         SELECT 
+            s.customerkey,
             s.orderdate,
+            MAX(c.givenname),
+            MAX(c.surname),
+            MAX(c.age),
+            MAX(c.countryfull),
+            MAX(c.continent),
             sum(s.quantity::double precision * s.netprice * s.exchangerate) AS total_net_revenue,
             count(s.orderkey) AS num_orders
            FROM sales s
-             LEFT JOIN customer c ON s.customerkey = c.customerkey
-          GROUP BY s.customerkey, c.givenname, c.surname, s.orderdate, c.countryfull, c.age, c.continent
+             INNER JOIN customer c ON s.customerkey = c.customerkey
+          GROUP BY s.customerkey, s.orderdate
         )
- SELECT customerkey,
+ SELECT
+   customerkey,
  	orderdate,
  	total_net_revenue,
     CONCAT(TRIM(givenname), ' ', TRIM(surname)) AS full_name,
