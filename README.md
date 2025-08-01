@@ -43,7 +43,11 @@ The contribution of each segment to company revenue is visualised in the followi
 
 ![](result_plots/1_ltv_piechart.png)
 
-Providing an analysis of both net company revenue, it is shown that high spenders contribute to the majority (65.2% at $135.4m) of historical company revenue. While this is expected, an eye-opening observation follows that Low spenders only provide 2.1% of revenue ($4.34m). 
+An analysis of net company revenue reveals that high spenders account for the majority of historical revenue—65.2% ($135.4M). While this aligns with expectations, a more surprising insight is that low spenders contribute just 2.1% ($4.34M). This suggests a significant underperformance in engaging lower-spending customers and may indicate an opportunity for more targeted marketing strategies aimed at this segment.
+
+Seeing as this dataset spans sales from three continents (North America, Australia and Europe), I delved into this tendency by continent. The following figure shows a breakdown of the above piechart figures, this time by each continent.
+
+![](csv_data/continent_ltv_data.csv)
 
 ### 2. How does the company perform at customer retention rates?
 
