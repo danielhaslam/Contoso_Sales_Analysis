@@ -10,7 +10,7 @@ A further thanks to **Luke Barousse**'s Intermediate SQL Course for Data Analyti
 
 ## Project Goals
 
-By querying the relational database on sale, customer and product records, this project sought answers to considered questions which aimed to generate useful recommendations for the selling company. In particular, three major questions were asked: 
+By querying the relational database on sale, customer and product records, this project sought answers to considered questions which aimed to generate useful recommendations for the selling company. In particular, three key questions were considered: 
 
 1. How does customer Lifetime Value (LTV) vary across the dataset?
 
@@ -30,7 +30,26 @@ The following resources were employed to effectively manage these databases to b
 
 - **Visual Studio Code** was used to manage the Git repository.
  
-##
+## Findings & Discussion
+
+### 1. How does customer Lifetime Value (LTV) vary across the dataset?
+
+Here, the general distribution of LTVs were considered. Firstly, it was desired to see how customers contributed to the company revenue as a function of their status as a low spender and a high spender. Lower (LQ) and upper (UQ) quartile LTV values came at $2,693.14 and $10,946.43 respectively, and customers were segmented according to these values: 
+- Low: LTV less than the LQ. 
+- Medium: LTV greater than the LQ, less than the UQ. 
+- High: LTV greater than the UQ.
+
+The contribution of each segment to company revenue is visualised in the following piechart.
+
+![](project_views/1_sales_customer_data.sql)
+
+Providing an analysis of both net company revenue, it is shown that high spenders contribute to the majority (65.2%) of company revenue. While this is expected, an eye-opening observation follows that Low spenders only provide 2.1% of revenue ($4.34m). 
+
+### 2. How does the company perform at customer retention rates?
+
+### 3. Which products contribute most to these customer retention and revenue figures? 
+
+
 
 ##
 
