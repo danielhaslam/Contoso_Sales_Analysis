@@ -47,7 +47,7 @@ An analysis of net company revenue reveals that high spenders account for the ma
 
 Seeing as the company spans sales from three continents (North America, Australia and Europe), I delved into this tendency by continent. The following figure shows a breakdown of the above piechart figures, this time by each continent.
 
-![](csv_data/continent_ltv_data.csv)
+![](result_plots/1_ltv_continent_barplot.png)
 
 Low-spending customers show consistently low engagement across all three continents, suggesting that this trend is not driven by location-specific factors. However, Europe performs marginally better in this segment, with 3.1% of sales attributed to low spenders, compared to just 1.7% in both Australia and North America. Notably, Europe also demonstrates stronger engagement among median spenders, who contribute over 40% of the region’s revenue—significantly higher than the under 30% seen in Australia and North America.
 
