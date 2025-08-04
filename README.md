@@ -61,9 +61,17 @@ Firstly, historical churn rates are analysed. The pie chart below depicts this.
 
 ![](result_plots/2_customer_retention_piechart.png)
 
+A churned rate of over 90% suggests that customer retention in general is poor: in the e-commerce industry, average customer churn rates typically fall between 60% and 80% annually. For example, repeat purchase rates for first-time buyers are often as low as 20–30%, and retaining even 30–40% of customers year-over-year is considered solid performance. Therefore, a churn rate exceeding 90% is well above industry norms and likely points to gaps in customer experience, product-market fit, or general retention strategy.
 
-### 3. Which products contribute most to these customer retention and revenue figures? 
+Breaking this statistic down further based on cohort year provides a further insight.
 
+![](result_plots/2_customer_cohort_barplot.png)
+
+Customer churn has remained consistently high across all cohorts, hovering around 90% annually, with little improvement over time. This indicates a systemic retention issue, rather than a temporary/cohort-specific problem. The slight uptick in retention from the 2019 to 2023 cohorts (around 10% active) might suggest recent efforts to improve customer engagement, but the change is marginal.
+
+Overall, the consistently high churn suggests an over-reliance on acquisition over retention—an unsustainable strategy in e-commerce. Modest improvements in customer retention through targeted strategies could yield massive improvements in long-term revenue.
+
+### 3. Which products contribute most to these customer retention and revenue figuresff
 
 
 ##
