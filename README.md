@@ -34,6 +34,8 @@ The following resources were employed to effectively manage these databases to b
 
 ### 1. How does customer Lifetime Value (LTV) vary across the dataset?
 
+For this and the next question, customer-associated trends are the main focus. For this purpose, the view `sales_customer_data` was produced to extract relevant customer details. The associated SQL query offers further detail on this view, and can be found [here](https://github.com/danielhaslam/Contoso_Sales_Analysis/blob/main/project_views/1_sales_customer_data.sql). 
+
 Here, the general distribution of LTVs were considered. Firstly, it was desired to see how customers contributed to the company revenue as a function of their status as a low spender and a high spender. Lower (LQ) and upper (UQ) quartile LTV values came at $2,693 and $10,946 respectively, and customers were segmented according to these values: 
 - Low: LTV less than the LQ. 
 - Medium: LTV greater than the LQ, less than the UQ. 
@@ -71,8 +73,18 @@ Customer churn has remained consistently high across all cohorts, hovering aroun
 
 Overall, the consistently high churn suggests an over-reliance on acquisition over retention—an unsustainable strategy in e-commerce. Modest improvements in customer retention through targeted strategies could yield massive improvements in long-term revenue.
 
-### 3. Which products contribute most to these customer retention and revenue figuresff
+### 3. Which products contribute most to these customer retention and revenue figures?
 
+Now that some key insights into customer trends have been explored, we can perform similar analysis on how value is generated on a product-by-product basis. The queries here attempt to reveal what should be sold, rather than who should be sold to and how. As such, a view named `product_transaction_data` has been created to highlight sales by product - the SQL can be found [here](https://github.com/danielhaslam/Contoso_Sales_Analysis/blob/main/project_views/2_product_transation_data.sql).
+
+Specifically, product categories are the main focus in this question. Querying distinct categories reveals that Contoso sells eight types of product: *Audio*; *Cameras and Camcorders*; *Cell phones*; *Computers*; *Games and Toys*; *Home Appliances*; *Music, Movies and Audio Books*; and *TV and Video*.
+
+First of all, it is of interest to see which category of item contributes to the net revenue, and how this has changed in recent years. Furthermore, I wanted to see how this has developed in recent years, in case particular product categories see different performance changes. Finally, to get an idea of how each sale contributes to total revenue, sub-median and super-median sale contributions are evaluated separately.
+
+Extracting all this data to visualise, the following table was produced, showing year-on-year revenue contributions by product category.
+
+![](result_plots/3_category_revenue_barplot.png)
+*Note: each bar is additive: the revenues from sub-median sales, in lighter colours, add onto the those from super-median sales, in darker colours. Sub-median sale revenues are typically much smaller than super-median sale revenues.*
 
 ##
 
