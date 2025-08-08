@@ -16,7 +16,7 @@ By querying the relational database on sale, customer and product records, this 
 
 2. How does the company perform at customer retention rates?
 
-3. Which products contribute most to these customer retention and revenue figures? 
+3. Which products contribute most to these revenue figures? 
 
 ## Software Used
 
@@ -73,7 +73,7 @@ Customer churn has remained consistently high across all cohorts, hovering aroun
 
 Overall, the consistently high churn suggests an over-reliance on acquisition over retention—an unsustainable strategy in e-commerce. Modest improvements in customer retention through targeted strategies could yield massive improvements in long-term revenue.
 
-### 3. Which products contribute most to these customer retention and revenue figures?
+### 3. Which products contribute most to these revenue figures?
 
 Now that some key insights into customer trends have been explored, we can perform similar analysis on how value is generated on a product-by-product basis. The queries here attempt to reveal what should be sold, rather than who should be sold to and how. As such, a view named `product_transaction_data` has been created to highlight sales by product - the SQL can be found [here](https://github.com/danielhaslam/Contoso_Sales_Analysis/blob/main/project_views/2_product_transation_data.sql).
 
@@ -84,9 +84,11 @@ First of all, it is of interest to see which category of item contributes to the
 Extracting all this data to visualise, the following table was produced, showing year-on-year revenue contributions by product category.
 
 ![](result_plots/3_category_revenue_barplot.png)
-*Note: each bar is additive: the revenues from sub-median sales, in lighter colours, add onto the those from super-median sales, in darker colours. Sub-median sale revenues are typically much smaller than super-median sale revenues.*
+*<ins>Note</ins>: Each bar placed vertically is additive: the revenues from sub-median sales, in lighter colours, add onto the those from super-median sales, in darker colours. Sub-median sale revenues are typically much smaller than super-median sale revenues.*
 
-##
+Evidently, computers consistently appear as the most significant contributors to company revenue, in the order of USD $10 million per calendar year. Games, Toys and Audio products, meanwhile, prevail as the least valuable contributors to company revenue. 
+
+## Conclusions
 
 ##
 
