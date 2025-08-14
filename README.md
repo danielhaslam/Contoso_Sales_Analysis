@@ -20,7 +20,7 @@ By querying the relational database on sale, customer and product records, this 
 
 ## Software Used
 
-The following resources were employed to effectively manage these databases to build these queries: 
+The following resources were employed to effectively manage these databases, and to build and analyse the results of queries on them: 
 
 - **PostgreSQL** was used as the relational database management system, to store and manage the data.
 
@@ -29,6 +29,8 @@ The following resources were employed to effectively manage these databases to b
 - **DBeaver 25** was the UI with which SQL scripts were written, and tables and views were generated.
 
 - **Visual Studio Code** was used to manage the Git repository.
+
+- **Python** - especially **matplotlib** - to manipulate and visualise the csv files produced from the SQL queries.
  
 ## Findings & Discussion
 
@@ -79,14 +81,16 @@ Now that some key insights into customer trends have been explored, we can perfo
 
 Specifically, product categories are the main focus in this question. Querying distinct categories reveals that Contoso sells eight types of product: *Audio*; *Cameras and Camcorders*; *Cell phones*; *Computers*; *Games and Toys*; *Home Appliances*; *Music, Movies and Audio Books*; and *TV and Video*.
 
-First of all, it is of interest to see which category of item contributes to the net revenue, and how this has changed in recent years. Furthermore, I wanted to see how this has developed in recent years, in case particular product categories see different performance changes. Finally, to get an idea of how each sale contributes to total revenue, sub-median and super-median sale contributions are evaluated separately.
+First of all, it is of interest to see which category of item contributes to the net revenue, and how this has changed in recent years. Furthermore, I wanted to see how this has developed in recent years, in case particular product categories see different performance changes. Finally, to get an idea of how relatively small and large sales contrbute to revenue, sub-median and super-median sale contributions by  are evaluated separately.
 
-Extracting all this data to visualise, the following table was produced, showing year-on-year revenue contributions by product category.
+Extracting all this data to visualise, the following table was produced, showing year-on-year revenue contributions by product category between 2021 and 2023.
 
 ![](result_plots/3_category_revenue_barplot.png)
 *<ins>Note</ins>: Each bar placed vertically is additive: the revenues from sub-median sales, in lighter colours, add onto the those from super-median sales, in darker colours. Sub-median sale revenues are typically much smaller than super-median sale revenues.*
 
 Evidently, computers consistently appear as the most significant contributors to company revenue, in the order of USD $10 million per calendar year. Games, Toys and Audio products, meanwhile, prevail as the least valuable contributors to company revenue. 
+
+It is clear that 2022 saw highest company revenue of the three years, which may be explained by post-pandemic recovery, followed by an unwanted performance dropoff after 2022.     
 
 ## Conclusions
 
