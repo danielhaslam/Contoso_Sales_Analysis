@@ -96,6 +96,8 @@ The downturn from 2022 to 2023 was broadly distributed, but its weight was felt 
 
 From a strategic standpoint, this pattern points toward a need for balance. The high-value transaction base is clearly a major revenue driver, and maintaining its strength is essential. At the same time, broadening the mid-tier customer segment could help reduce sensitivity to pullbacks in premium purchasing. Categories with a more even mix, such as Audio, provide useful examples of resilience and could offer lessons for how to expand engagement across the value spectrum. This balance would not only help smooth volatility in future downturns but also unlock growth opportunities during upswings.
 
+geographic revenue variations - 2022 vs 2023 - variance by store location! 
+
 ## Conclusions
 
 ##
