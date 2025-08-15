@@ -6,7 +6,7 @@ WITH country_sales AS (
 
         COALESCE(SUM(CASE WHEN country = 'United States' THEN revenue_2022 END), 0) AS usa_2022,
         COALESCE(SUM(CASE WHEN country = 'United States' THEN revenue_2023 END), 0) AS usa_2023,
-        
+
         COALESCE(SUM(CASE WHEN country = 'Canada' THEN revenue_2022 END), 0) AS canada_2022,
         COALESCE(SUM(CASE WHEN country = 'Canada' THEN revenue_2023 END), 0) AS canada_2023
     FROM (
@@ -27,14 +27,14 @@ SELECT
 
     online_2022,
     online_2023,
-    ROUND(((online_2023 - online_2022) / (online_2022 * 100))::NUMERIC, 2) AS pct_change_online,
+    ROUND(((online_2023 - online_2022) / NULLIF(online_2022, 0) * 100)::NUMERIC, 2) AS pct_change_online,
 
     usa_2022,
     usa_2023,
-    ROUND(((usa_2023 - usa_2022) / usa_2022, 0 * 100)::NUMERIC, 2) AS pct_change_usa,
-
+    ROUND(((usa_2023 - usa_2022) / NULLIF(usa_2022, 0) * 100)::NUMERIC, 2) AS pct_change_usa,
+    
     canada_2022,
     canada_2023,
-    ROUND(((canada_2023 - canada_2022) / canada_2022 * 100)::NUMERIC, 2) AS pct_change_canada
+    ROUND(((canada_2023 - canada_2022) / NULLIF(canada_2022, 0) * 100)::NUMERIC, 2) AS pct_change_canada
 FROM country_sales
 ORDER BY categoryname;
