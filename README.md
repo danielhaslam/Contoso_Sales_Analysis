@@ -92,16 +92,52 @@ Clearly, Contoso’s revenue story in recent years 2021 to 2023 is one of rapid 
 
 Looking at category composition, a few product lines clearly dominate revenue figures. In 2023, Computers contributed over a third of total revenue (about $11.6M), followed by Cell phones (~18%), Home Appliances (~18%), and TV & Video (~13%). Categories like Audio, Games & Toys, and Music, Movies & Audio Books remain smaller in total share but have distinct profiles in their mix of high- and lower-value sales. For instance, Audio’s super-median share is around 84%, noticeably lower than most other categories, suggesting a relatively broader spread of transaction values. By contrast, Music, Movies & Audio Books skews heavily toward higher-value purchases, with around 91% of revenue coming from the upper half of its transaction range.
 
-The downturn from 2022 to 2023 was broadly distributed, but its weight was felt most in the largest categories. Computers alone saw a revenue reduction of more than a third, accounting for over half of the company’s total decline, with Cell phones and TV & Video making up much of the remainder. While the majority of the contraction came from super-median transactions, this reflects the fact that these larger purchases consistently make up the bulk of Contoso’s revenue — if spending falls evenly across the customer base, the upper segment will naturally account for most of the decrease simply by scale.
+The downturn from 2022 to 2023 was broadly distributed, but its weight was felt most in the largest categories. Computers alone saw a revenue reduction of more than a third, accounting for >50% of the company’s total decline, with cellphones and TV/video sales making up much of the remainder.
 
 From a strategic standpoint, this pattern points toward a need for balance. The high-value transaction base is clearly a major revenue driver, and maintaining its strength is essential. At the same time, broadening the mid-tier customer segment could help reduce sensitivity to pullbacks in premium purchasing. Categories with a more even mix, such as Audio, provide useful examples of resilience and could offer lessons for how to expand engagement across the value spectrum. This balance would not only help smooth volatility in future downturns but also unlock growth opportunities during upswings.
 
-geographic revenue variations - 2022 vs 2023 - variance by store location! 
+Stakeholders may also be interested in further dissecting this year-to-year decline. As with customer-based analysis, I focused on geographic analysis, honing in on sources of business capital that are most significant. Querying this provides a breakdown by nation, as well as online sales, which account for 56.7% of 2022-2023 revenue:
+
+| Country of Sale     | Sales ($ Millions) |
+|------------------|--------------------|
+| Online           | 44.22              |
+| United States    | 16.99              |
+| Canada           | 4.45               |
+| Germany          | 3.65               |
+| Australia        | 3.09               |
+| United Kingdom   | 2.31               |
+| Netherlands      | 1.53               |
+| France           | 1.08               |
+| Italy            | 0.66               |
+
+With North American sales accounting for a further 27.5% of business revenue across the 2-year period, I focussed exclusively on Online-based, USA and Canada store sales. These foci help to understand whether the decline may be attributed specifically to online markets or vice-versa, and to see if physical store trends are consistent across (adjacent) nations. 
+
+Querying 2022 and 2023 sales in each product, where sales came from these store locations, provide the following data:
+
+| Category                    | Online 2023 | Δ% Online | USA 2023 | Δ% USA | Canada 2023 | Δ% Canada |
+|-----------------------------|-------------|-----------|----------|--------|-------------|-----------|
+| Computers                   | 7.090 | **-25.33%** | 2.168 | **-50.66%** | 0.678 | **-33.26%** |
+| Cell phones                 | 3.675 | **-16.41%** | 1.104 | **-43.83%** | 0.355 | **-19.05%** |
+| Home Appliances             | 3.443 | **-5.88%**  | 1.022 | **-32.46%** | 0.379 | **-6.51%**  |
+| TV and Video                | 2.768 | **-12.15%** | 0.848 | **-41.06%** | 0.187 | **-40.45%** |
+| Music, Movies & Audio Books | 1.317 | **-18.25%** | 0.406 | **-45.55%** | 0.140 | **-16.39%** |
+| Cameras and camcorders      | 1.229 | **-1.09%**  | 0.329 | **-45.03%** | 0.105 | **-24.19%** |
+
+Looking at the breakdown, online sales remain the strongest channel across every category, significantly outweighing USA and Canada physical store sales. Even in categories where sales contracted online (e.g. Computers -25.3%, Cell Phones -16.4%), the online channel still dwarfs store revenues, highlighting its resilience and central role in Contoso’s business model.
+
+Certain categories consistently outperform in online sales versus stores — most notably Computers, Cell Phones, and Home Appliances, each generating over three times the revenue online compared to their USA and Canada counterparts combined. In contrast, categories like Cameras and camcorders or Music, Movies & Audio Books show more balanced sales splits, though they are still heavily tilted online.
+
+The USA has absorbed the steepest declines across the board, with sales drops often in the -40% to -50% range, such as Computers (-50.7%) and Music, Movies & Audio Books (-45.6%). This contrasts sharply with online, where declines are generally milder, and Canada, where contraction is less severe (though still notable in categories like TV and Video: -40.5%). These patterns suggest a pronounced weakness in U.S. physical retail, especially for high-ticket electronics.
+
+Overall, Contoso’s performance highlights the need to prioritise online marketing, which remains the primary revenue driver. Investments in digital promotions, enhancing the online shopping experience, and optimising marketing efforts are key. The sharp declines in U.S. physical retail suggest re-evaluating store strategies, such as optimising footprints, repositioning products, or integrating online and offline operations to mitigate losses; while inconsistency in sale figure evolution between countries warrants further location-based investigations to understand where, and in which category, certain product marketing needs to improve.
 
 ## Conclusions
 
-##
+This project aims to generate key business insights to inform stakeholders on optimising business performance, which has seen a significant decline according to recent sales data (final transaction date: 20 April 2024). The analysis first explored customer lifetime value, revealing that low-spending customers (below the 25th percentile in sale revenue) contribute just 2.1% to total revenue—less than anticipated. This indicates that marketing strategies, particularly in North America and Australia, should focus on engaging these customers to increase their expenditure.
 
+Next, customer retention was investigated, uncovering a concerning churn rate of 90.5%, underscoring the urgent need for improved retention initiatives, such as enhanced membership schemes. The data also indicated a 0.8% rise in churn rate from 2022 to 2023, suggesting that recent retention failures may be a primary contributor to the business’s decline.
+
+Finally, the analysis delved into raw revenue figures, examining category-based and geographic segmentation of product sales to identify the sources of decline. Computers and mobile phone sales showed the steepest percentage declines across the company. Although the downturn is evident across regions, the U.S., which accounts for 38% of global physical store revenue, requires targeted marketing efforts in these product categories to recover losses. Online markets have proven more resilient than physical stores. However, further country-by-country analysis, combined with an assessment of external factors such as geopolitical developments, would provide deeper insights into where the marketing department should direct its resources.
 
 
 
