@@ -71,7 +71,7 @@ Breaking this statistic down further based on cohort year provides a further ins
 
 ![](result_plots/2_customer_cohort_barplot.png)
 
-Customer churn has remained consistently high across all cohorts, hovering around 90% annually, with little improvement over time. This indicates a systemic retention issue, rather than a temporary/cohort-specific problem. The slight uptick in retention from the 2019 to 2023 cohorts (around 10% active) might suggest recent efforts to improve customer engagement, but the change is marginal.
+Customer churn has remained consistently high across all cohorts, hovering around 90% annually, with little improvement over time. This indicates a systemic retention issue, rather than a temporary/cohort-specific problem - although, it is notable to point out that slight improvements in this metric, over the past year, began to reverse for the first time since 2018. The slight uptick in retention from the 2019 to 2023 cohorts (around 10% active) might suggest recent efforts to improve customer engagement, but the change is marginal.
 
 Overall, the consistently high churn suggests an over-reliance on acquisition over retention—an unsustainable strategy in e-commerce. Modest improvements in customer retention through targeted strategies could yield massive improvements in long-term revenue.
 
@@ -135,7 +135,7 @@ Overall, Contoso’s performance highlights the need to prioritise online market
 
 This project aims to generate key business insights to inform stakeholders on optimising business performance, which has seen a significant decline according to recent sales data (final transaction date: 20 April 2024). The analysis first explored customer lifetime value, revealing that low-spending customers (below the 25th percentile in sale revenue) contribute just 2.1% to total revenue—less than anticipated. This indicates that marketing strategies, particularly in North America and Australia, should focus on engaging these customers to increase their expenditure.
 
-Next, customer retention was investigated, uncovering a concerning churn rate of 90.5%, underscoring the urgent need for improved retention initiatives, such as enhanced membership schemes. The data also indicated a 0.8% rise in churn rate from 2022 to 2023, suggesting that recent retention failures may be a primary contributor to the business’s decline.
+Next, customer retention was investigated, uncovering a concerning churn rate of 90.5%, a figure largely maintained across customer cohort years, underscoring the urgent need for improved retention initiatives, such as enhanced membership schemes. The data also indicated a 0.8% rise in churn rate from 2022 to 2023, suggesting that recent retention failures may be a primary contributor to the business’s decline.
 
 Finally, the analysis delved into raw revenue figures, examining category-based and geographic segmentation of product sales to identify the sources of decline. Computers and mobile phone sales showed the steepest percentage declines across the company. Although the downturn is evident across regions, the U.S., which accounts for 38% of global physical store revenue, requires targeted marketing efforts in these product categories to recover losses. Online markets have proven more resilient than physical stores. However, further country-by-country analysis, combined with an assessment of external factors such as geopolitical developments, would provide deeper insights into where the marketing department should direct its resources.
 
